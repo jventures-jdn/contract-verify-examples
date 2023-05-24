@@ -1,0 +1,9 @@
+{
+  "extends": "@config/typescript-config/hardhat.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "~/*": ["src/*"] }
+  },
+  "include": ["./src"],
+  "files": ["./hardhat.config.ts"]
+}

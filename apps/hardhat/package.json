@@ -1,0 +1,28 @@
+{
+  "name": "contract-verify-examples",
+  "author": "J Ventures Co., Ltd.",
+  "scripts": {
+    "hardhat:networks": "pnpm hardhat verify --list-networks",
+    "hardhat:node": "pnpm hardhat node",
+    "hardhat:compile": "pnpm hardhat compile",
+    "deploy:example": " pnpm hardhat:compile && hardhat run --network JFINT ./src/deploys/example.ts",
+    "verfiy:example": "pnpm hardhat:compile && hardhat verify --network JFINT 0xf898D05D367c69Ca135b1D39A11A6D2AE42cBe42",
+    "sourcify": "pnpm hardhat:compile && hardhat sourcify --network JFIN --contract-name Example"
+  },
+  "devDependencies": {
+    "@config/eslint-config": "workspace:*",
+    "@config/typescript-config": "workspace:*",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/hardhat": "^6.1.6",
+    "cross-var": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.4.0",
+    "hardhat": "^2.14.0",
+    "typechain": "^8.1.1"
+  },
+  "dependencies": {
+    "hardhat-deploy": "^0.11.29"
+  }
+}
