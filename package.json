@@ -1,0 +1,35 @@
+{
+  "name": "contract-verify-examples",
+  "author": "J Ventures Co., Ltd.",
+  "version": "0.0.1",
+  "workspaces": [
+    "apps/*"
+  ],
+  "description": "Contract verify examples",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.11.0",
+  "scripts": {
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@semantic-release/changelog": "6.0.0",
+    "husky": "^8.0.0",
+    "prettier": "latest",
+    "semantic-release": "^21.0.2",
+    "turbo": "1.6.1",
+    "typescript": "^5.0.4"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
+}
